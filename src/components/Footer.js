@@ -21,11 +21,9 @@ function Footer() {
       <Typography variant="p" mb={1}>
         112 Summer Lakes Drive Cary, NC 27513
       </Typography>
-      <Typography variant="h4">Ukraine</Typography>
+      <Typography variant="h4">North Macedonia</Typography>
       <Typography variant="p" mb={2}>
-        Av. Unión, 163, 10th Floor <br />
-        Colonia Americana <br />
-        Guadalajara, Jalisco, México
+        Prilep, Pelagonia
       </Typography>
       <Typography variant="caption">
         © 2023-{new Date().getFullYear()} Wisdom LLC. All rights reserved.

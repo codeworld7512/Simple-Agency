@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box, Grid, Typography, Stack, Avatar, TextField } from "@mui/material";
-import CTO from "../assets/img/richmondyang.png";
+import CTO from "../assets/img/st.jpg";
 import { pink } from "@mui/material/colors";
 import { MuiTelInput, matchIsValidTel } from "mui-tel-input";
 import { Controller, useForm } from "react-hook-form";
@@ -23,7 +23,7 @@ function ContactUs() {
       );
     } catch (e) {
       console.log(e);
-      snackbar.showMessage(e.message, );
+      snackbar.showMessage(e.message,);
     }
     setIsLoading(false);
   };
@@ -34,7 +34,7 @@ function ContactUs() {
       try {
         const res = await axios.get("https://geolocation-db.com/json/");
         setCountryCode(res.data.country_code);
-      } catch (e) {}
+      } catch (e) { }
     };
     fetchData();
   }, []);
@@ -64,19 +64,24 @@ function ContactUs() {
             </Typography>
             <Stack direction="row" spacing={2}>
               <Typography variant="p">
-                Simply fill out the form or email us at
+                Simply fill out the form
+              </Typography>
+            </Stack>
+            <Stack direction="row" spacing={2}>
+              <Typography variant="p">
+                Or email us at
               </Typography>
               <Typography
                 variant="p"
                 component="a"
-                href="mailto:boostup0106@gmail.com"
+                href="mailto:stefannaumoski21@gmail.com"
                 sx={{
                   color: pink[500],
                   fontWeight: "bold",
                   textDecoration: "none",
                 }}
               >
-                boostup0106@gmail.com
+                stefannaumoski21@gmail.com
               </Typography>
             </Stack>
             <Stack direction="row" spacing={2}>
@@ -84,20 +89,20 @@ function ContactUs() {
               <Typography
                 variant="p"
                 component="a"
-                href="tel:+19282514577"
+                href="tel:+18062212893"
                 sx={{
                   color: pink[500],
                   fontWeight: "bold",
                   textDecoration: "none",
                 }}
               >
-                +1 928 251 4577
+                +1 806 221 2893
               </Typography>
             </Stack>
             <Stack direction="row" spacing={4} alignItems="center">
               <Avatar src={CTO} sx={{ width: 50, height: 50 }} />
               <Stack direction="column" spacing={0}>
-                <Typography variant="h6">Richmond Yang</Typography>
+                <Typography variant="h6">Stefan Naumoski</Typography>
                 <Typography variant="p">
                   Technical Manager of Wisdom LLC
                 </Typography>
